@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дед Алкоголик против Бабки Палестинки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game" width="900" height="400"></canvas>
+
+        <div id="ui">
+            <div id="score">Счёт: 0</div>
+            <div id="controls">ПРОБЕЛ — прыжок | R — рестарт</div>
+        </div>
+
+        <div id="gameover" class="hidden">
+            <h1>Дед догнал бабку! 🍾</h1>
+            <p>Счёт: <span id="final-score">0</span></p>
+            <button onclick="restart()">Ещё раз</button>
+        </div>
+    </div>
+
+    <audio id="music" loop>
+        <source src="assets/music/folk.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="game.js"></script>
+</body>
+</html>
